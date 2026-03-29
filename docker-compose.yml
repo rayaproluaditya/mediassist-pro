@@ -1,0 +1,98 @@
+# ==============================================================================
+# MediAssist Pro — Docker Compose
+#
+# Spins up three services:
+#   chromadb  — persistent vector database (port 8000)
+#   backend   — FastAPI medical intake agent (port 8001)
+#   frontend  — Streamlit UI (port 8501)
+#
+# Usage:
+#   cp .env.example .env        # add your GROQ_API_KEY
+#   docker-compose up --build
+#   open http://localhost:8501
+# ==============================================================================
+
+version: "3.9"
+
+services:
+
+  # ── ChromaDB (Vector DB) ─────────────────────────────────────────────────────
+  chromadb:
+    image: chromadb/chroma:0.5.0
+    container_name: mediassist-chromadb
+    ports:
+      - "8000:8000"
+    volumes:
+      - chromadb_data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - ANONYMIZED_TELEMETRY=FALSE
+    networks:
+      - mediassist-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/v1/heartbeat"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  # ── FastAPI Backend ───────────────────────────────────────────────────────────
+  backend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.backend
+    container_name: mediassist-backend
+    ports:
+      - "8001:8000"
+    environment:
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - MODEL_NAME=${MODEL_NAME:-llama-3.3-70b-versatile}
+      - CHROMA_HOST=chromadb
+      - CHROMA_PORT=8000
+      - DEBUG=${DEBUG:-false}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - PYTHONPATH=/app
+    volumes:
+      # Mount data dir so guidelines & embeddings persist across rebuilds
+      - ./data:/app/data
+    networks:
+      - mediassist-net
+    depends_on:
+      chromadb:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 45s
+
+  # ── Streamlit Frontend ────────────────────────────────────────────────────────
+  frontend:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.frontend
+    container_name: mediassist-frontend
+    ports:
+      - "8501:8501"
+    environment:
+      # Frontend talks to the backend container by name on the internal network
+      - BACKEND_URL=http://backend:8000
+    networks:
+      - mediassist-net
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+
+# ── Volumes ───────────────────────────────────────────────────────────────────
+volumes:
+  chromadb_data:
+    driver: local
+
+# ── Networks ──────────────────────────────────────────────────────────────────
+networks:
+  mediassist-net:
+    driver: bridge

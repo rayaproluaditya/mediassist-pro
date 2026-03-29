@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual envs
+venv/
+env/
+.venv/
+.env/
+
+# Secrets — NEVER commit these
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model checkpoints (large binary files)
+fine_tuning/checkpoints/
+fine_tuning/data/model_cache/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Vector DB local data
+data/embeddings/
+vector_db/chroma/
+vector_db/indexes/
+chroma_data/
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+fine_tuning/logs/
+
+# Test artifacts
+.pytest_cache/
+.coverage
+htmlcov/

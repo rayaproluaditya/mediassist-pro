@@ -1,0 +1,72 @@
+[
+  {
+    "title": "CDC Fever Guidelines — Adults",
+    "source": "CDC / Fever Management",
+    "category": "fever",
+    "symptoms": ["fever", "high temperature", "chills"],
+    "content": "A fever in adults is defined as an oral temperature above 100.4°F (38°C). Most fevers are caused by viral or bacterial infections and are self-limiting. Adults should rest, stay well-hydrated, and may use acetaminophen or ibuprofen to reduce discomfort. Seek emergency care immediately if fever exceeds 103°F (39.4°C) and is accompanied by a stiff neck, severe headache, rash, difficulty breathing, or confusion. Persistent fever lasting more than three days without improvement warrants a physician visit. Older adults and immunocompromised patients should have a lower threshold for seeking care, as their fever response may be blunted even in serious infections."
+  },
+  {
+    "title": "CDC Fever Guidelines — Pediatric",
+    "source": "CDC / Pediatric Fever",
+    "category": "fever",
+    "symptoms": ["fever", "pediatric", "child", "infant"],
+    "content": "For infants younger than 3 months, any fever (rectal temperature ≥ 100.4°F / 38°C) requires immediate medical evaluation—do not treat at home and call a physician or go to the ER at once. For children aged 3–36 months, fever above 102.2°F (39°C) warrants a clinical assessment. Febrile seizures can occur in children 6 months to 5 years; they are usually brief and self-limiting but require prompt evaluation. Parents should never give aspirin to children due to the risk of Reye's syndrome. Acetaminophen or ibuprofen (age-appropriate doses) can be used for comfort in older children."
+  },
+  {
+    "title": "CDC Headache Assessment Guidelines",
+    "source": "CDC / Headache Protocol",
+    "category": "headache",
+    "symptoms": ["headache", "migraine", "head pain", "pressure in head"],
+    "content": "Headaches are classified as primary (tension, migraine, cluster) or secondary (caused by an underlying condition). Red-flag features requiring urgent evaluation include: sudden onset of the worst headache of one's life (thunderclap headache), headache with fever and stiff neck (meningitis sign), headache following head trauma, new headache in a person over 50, or headache with focal neurological signs. Migraines are often unilateral, throbbing, and associated with nausea, photophobia, and phonophobia. Tension headaches present as bilateral pressure or tightening. Patients with frequent or severe headaches should maintain a headache diary documenting triggers, duration, severity, and associated symptoms."
+  },
+  {
+    "title": "Respiratory Illness — Cough Assessment",
+    "source": "CDC / Respiratory Symptoms",
+    "category": "respiratory",
+    "symptoms": ["cough", "shortness of breath", "wheeze", "chest tightness", "sputum"],
+    "content": "Acute cough lasting fewer than 3 weeks is most commonly caused by upper respiratory infections (common cold, flu). Subacute cough (3–8 weeks) may follow a post-infectious course. Chronic cough lasting more than 8 weeks requires investigation for asthma, GERD, post-nasal drip, or other causes. Productive cough with yellow or green sputum and fever may suggest bacterial infection. Seek emergency care for: coughing up blood, severe difficulty breathing, stridor, cyanosis, or oxygen saturation below 94%. Patients with known asthma or COPD should follow their action plan and contact their provider if symptoms deviate from their baseline."
+  },
+  {
+    "title": "Chest Pain — Differential and Red Flags",
+    "source": "Emergency Medicine / Chest Pain Protocol",
+    "category": "emergency",
+    "symptoms": ["chest pain", "chest tightness", "chest pressure", "angina", "palpitations"],
+    "content": "EMERGENCY: Any chest pain must be evaluated promptly. Potentially life-threatening causes include: acute myocardial infarction (crushing pressure, radiation to arm/jaw, diaphoresis, nausea), pulmonary embolism (pleuritic pain, dyspnea, tachycardia), aortic dissection (tearing pain radiating to back), tension pneumothorax, and unstable angina. Non-cardiac causes include GERD, costochondritis, and musculoskeletal pain. However, NEVER assume chest pain is benign without a proper clinical evaluation including ECG, cardiac enzymes, and chest X-ray. Patients with chest pain should be directed to emergency services immediately regardless of age."
+  },
+  {
+    "title": "Abdominal Pain Assessment",
+    "source": "Clinical Guidelines / Abdominal Pain",
+    "category": "abdominal",
+    "symptoms": ["stomach pain", "abdominal pain", "belly ache", "nausea", "vomiting", "diarrhea"],
+    "content": "Abdominal pain assessment requires characterising location (RUQ, epigastric, periumbilical, RLQ, LLQ, diffuse), onset, severity, radiation, and associated symptoms. Right lower quadrant pain with rebound tenderness and fever may suggest appendicitis. Epigastric pain relieved by eating may indicate peptic ulcer disease. Severe diffuse abdominal pain with rigidity is a surgical emergency. In females of reproductive age, ectopic pregnancy must be excluded when lower abdominal pain is present. Nausea and vomiting with crampy abdominal pain and cessation of flatus/stool may suggest bowel obstruction. Dehydration from persistent vomiting or diarrhoea in vulnerable populations (elderly, infants) requires early intervention."
+  },
+  {
+    "title": "Musculoskeletal Pain Guidelines",
+    "source": "Clinical Guidelines / MSK Pain",
+    "category": "musculoskeletal",
+    "symptoms": ["back pain", "joint pain", "muscle ache", "stiffness", "swelling"],
+    "content": "Most acute low back pain is mechanical and resolves within 4–6 weeks with conservative management including activity as tolerated, NSAIDs, and physical therapy. Red flags for serious spinal pathology include: age over 50, history of cancer, unexplained weight loss, night pain, bowel or bladder dysfunction, saddle anaesthesia, progressive neurological deficits, or intravenous drug use. Cauda equina syndrome (bilateral leg weakness, incontinence) is a surgical emergency. Joint pain with swelling, warmth, and fever may represent septic arthritis requiring urgent aspiration and intravenous antibiotics."
+  },
+  {
+    "title": "Mental Health & Crisis Assessment",
+    "source": "SAMHSA / Mental Health First Aid",
+    "category": "mental_health",
+    "symptoms": ["anxiety", "depression", "suicidal", "panic attack", "mental health"],
+    "content": "Mental health emergencies include: active suicidal ideation with a plan, intent to harm others, acute psychosis, or substance overdose. If a patient expresses suicidal thoughts, direct them immediately to emergency services (911) or a crisis line (988 Suicide & Crisis Lifeline in the US). Panic attacks present with palpitations, shortness of breath, chest tightness, dizziness, and extreme fear; they are self-limiting but distressing. Anxiety and depression are prevalent conditions that respond well to treatment—encourage patients to seek care from a mental health professional. Avoid minimising symptoms; listen empathetically and connect patients with appropriate resources."
+  },
+  {
+    "title": "Skin Rash — Assessment Framework",
+    "source": "Dermatology Guidelines / Rash Protocol",
+    "category": "dermatology",
+    "symptoms": ["rash", "hives", "skin lesion", "itching", "redness"],
+    "content": "Rash assessment should document: distribution (localised vs generalised), morphology (macular, papular, vesicular, urticarial, purpuric), timeline, associated symptoms (fever, joint pain, mucous membrane involvement), recent medications, travel history, and possible exposures. Urticaria with angioedema or anaphylaxis is a medical emergency requiring epinephrine. Petechiae or purpura (non-blanching) with fever may indicate meningococcal disease or vasculitis—emergency referral is mandatory. Steven-Johnson syndrome (mucosal involvement, skin detachment) is a life-threatening drug reaction. Widespread varicella in immunocompromised patients requires antiviral treatment."
+  },
+  {
+    "title": "Neurological Symptoms — Stroke Recognition",
+    "source": "American Stroke Association / FAST Protocol",
+    "category": "neurology",
+    "symptoms": ["stroke", "facial droop", "arm weakness", "slurred speech", "numbness", "vision loss"],
+    "content": "Use the FAST mnemonic to recognise stroke: Face drooping (uneven smile), Arm weakness (one arm drifts down), Speech difficulty (slurred or strange), Time to call 911. Additional symptoms include: sudden severe headache with no known cause, sudden numbness or weakness of face/arm/leg (especially one side), sudden confusion, trouble seeing in one or both eyes, sudden trouble walking or loss of balance. Time is brain—every minute of delay in treatment results in approximately 1.9 million neurons lost. Stroke is a medical emergency: call 911 immediately. Do not drive the patient yourself as paramedics can begin treatment en route."
+  }
+]
