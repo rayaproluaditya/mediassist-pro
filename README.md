@@ -395,3 +395,9 @@ mediassist-pro/
 ├── requirements.txt
 └── .env.example
 ```
+
+
+
+
+
+<img width="2940" height="1694" alt="image" src="https://github.com/user-attachments/assets/735a2a2b-1211-4a8b-a012-d351a84e83f1" />
